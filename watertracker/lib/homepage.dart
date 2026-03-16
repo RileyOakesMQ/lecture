@@ -9,8 +9,12 @@ class Homepage extends StatelessWidget {
       BuildContext context) //returns a text widget that displays "Hello World"
   {
     return Scaffold(
-      backgroundColor: Color(0xFF63C7B2),
-      body: Text("Hello World"),
-    ); //scaffold is a widget that provides a structure for the app. It is used to create a basic layout for the app.
+        backgroundColor: Color(0xFF63C7B2),
+        body: Center(
+          child: Column(children: [
+            Text("Hello World"),
+            Icon(Icons.water_drop, size: 50, color: Colors.white),
+          ]),
+        )); //scaffold is a widget that provides a structure for the app. It is used to create a basic layout for the app.
   }
 }
