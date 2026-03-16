@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:watertracker/homepage.dart'; //importing the material package to use the material design widgets
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    throw UnimplementedError();
-  }
+void main() {
+  runApp(MaterialApp(
+      home:
+          Homepage())); //run the app and pass the MyApp widget as the root of the app
 }
